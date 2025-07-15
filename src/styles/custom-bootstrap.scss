@@ -1,0 +1,30 @@
+// src/styles/custom-bootstrap.scss
+
+// 1. Importa tus variables personalizadas
+@import './variables'; 
+
+// 2. Importa las variables de Bootstrap (asegúrate de tener Bootstrap SCSS instalado)
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+// 3. Define tus sobreescrituras
+// Ejemplo: Sobrescribir el color primary de Bootstrap con tu variable
+// $theme-colors: (
+//   "primary": $primary,
+// );
+
+// 4. Importa Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Estilos de componentes personalizados de Bootstrap
+.navbar-brand {
+    font-weight: bold;
+}
+
+// Estilos para las tarjetas de productos
+.product-card {
+    transition: transform 0.2s;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

@@ -1,0 +1,36 @@
+// src/styles/global.scss
+
+@import './custom-bootstrap'; // Importa tus sobreescrituras de Bootstrap
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f9;
+}
+
+// Estilos para la barra de navegación
+.navbar {
+    .nav-link, .dropdown-toggle {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        &:hover {
+        color: $primary !important;
+        }
+    }
+}
+
+// Estilos de la página principal
+.jumbotron {
+    background-color: $white;
+    border-radius: 8px;
+}
+
+// Utilidades
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// Ajustes para los contenedores principales
+main {
+    min-height: calc(100vh - 100px); // Ajusta según la altura de tu Header y Footer
+}
